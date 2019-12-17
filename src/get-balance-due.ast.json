@@ -1,0 +1,515 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "FunctionExpression",
+          "id": null,
+          "params": [],
+          "body": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "Literal",
+                  "value": "use strict",
+                  "raw": "'use strict'"
+                },
+                "directive": "use strict"
+              },
+              {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "fs"
+                    },
+                    "init": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "require"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "fs",
+                          "raw": "'fs'"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "kind": "const"
+              },
+              {
+                "type": "VariableDeclaration",
+                "declarations": [
+                  {
+                    "type": "VariableDeclarator",
+                    "id": {
+                      "type": "Identifier",
+                      "name": "path"
+                    },
+                    "init": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "Identifier",
+                        "name": "require"
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "path",
+                          "raw": "'path'"
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "kind": "const"
+              },
+              {
+                "type": "FunctionDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "getBalanceDue"
+                },
+                "params": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "file1Path"
+                          },
+                          "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "path"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "join"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "__dirname"
+                              },
+                              {
+                                "type": "Literal",
+                                "value": "data",
+                                "raw": "'data'"
+                              },
+                              {
+                                "type": "Literal",
+                                "value": "file1.json",
+                                "raw": "'file1.json'"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "kind": "const"
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "file2Path"
+                          },
+                          "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "path"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "join"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "Identifier",
+                                "name": "__dirname"
+                              },
+                              {
+                                "type": "Literal",
+                                "value": "data",
+                                "raw": "'data'"
+                              },
+                              {
+                                "type": "Literal",
+                                "value": "file2.json",
+                                "raw": "'file2.json'"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "kind": "const"
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "data1"
+                          },
+                          "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "JSON"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "parse"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "fs"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "readFileSync"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "file1Path"
+                                  },
+                                  {
+                                    "type": "Literal",
+                                    "value": "utf8",
+                                    "raw": "'utf8'"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "kind": "const"
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "Printing file 1 data: ",
+                            "raw": "'Printing file 1 data: '"
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "data1"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "I am blocked until file 1 is read. Unblock me",
+                            "raw": "'I am blocked until file 1 is read. Unblock me'"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "data2"
+                          },
+                          "init": {
+                            "type": "CallExpression",
+                            "callee": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "JSON"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "parse"
+                              }
+                            },
+                            "arguments": [
+                              {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "fs"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "readFileSync"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "file2Path"
+                                  },
+                                  {
+                                    "type": "Literal",
+                                    "value": "utf8",
+                                    "raw": "'utf8'"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "kind": "const"
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "Printing file 2 data: ",
+                            "raw": "'Printing file 2 data: '"
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "data2"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "I am blocked until file 1 & 2 are read. Unblock me",
+                            "raw": "'I am blocked until file 1 & 2 are read. Unblock me'"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "result"
+                          },
+                          "init": {
+                            "type": "BinaryExpression",
+                            "operator": "+",
+                            "left": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "data1"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "balanceDue"
+                              }
+                            },
+                            "right": {
+                              "type": "MemberExpression",
+                              "computed": false,
+                              "object": {
+                                "type": "Identifier",
+                                "name": "data2"
+                              },
+                              "property": {
+                                "type": "Identifier",
+                                "name": "balanceDue"
+                              }
+                            }
+                          }
+                        }
+                      ],
+                      "kind": "const"
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "console"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "log"
+                          }
+                        },
+                        "arguments": [
+                          {
+                            "type": "Literal",
+                            "value": "I need results from both files before running so I need to wait. Result is ",
+                            "raw": "'I need results from both files before running so I need to wait. Result is '"
+                          },
+                          {
+                            "type": "Identifier",
+                            "name": "result"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "ReturnStatement",
+                      "argument": {
+                        "type": "Identifier",
+                        "name": "result"
+                      }
+                    }
+                  ]
+                },
+                "generator": false,
+                "expression": false,
+                "async": false
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "AssignmentExpression",
+                  "operator": "=",
+                  "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "module"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "exports"
+                    }
+                  },
+                  "right": {
+                    "type": "Identifier",
+                    "name": "getBalanceDue"
+                  }
+                }
+              }
+            ]
+          },
+          "generator": false,
+          "expression": false,
+          "async": false
+        },
+        "arguments": []
+      }
+    }
+  ],
+  "sourceType": "script",
+  "comments": [],
+  "errors": []
+}

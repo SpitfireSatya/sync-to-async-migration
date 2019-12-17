@@ -1,0 +1,2620 @@
+{
+  "accessSync": {
+    "module": "fs",
+    "asyncName": "access",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`mode` {integer} **Default:** `fs.constants.F_OK`",
+            "name": "mode",
+            "type": "integer",
+            "default": "`fs.constants.F_OK`",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`mode` {integer} **Default:** `fs.constants.F_OK`",
+            "name": "mode",
+            "type": "integer",
+            "default": "`fs.constants.F_OK`",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "appendFileSync": {
+    "module": "fs",
+    "asyncName": "appendFile",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL|number} filename or file descriptor",
+            "name": "path",
+            "type": "string|Buffer|URL|number",
+            "desc": "filename or file descriptor"
+          },
+          {
+            "textRaw": "`data` {string|Buffer}",
+            "name": "data",
+            "type": "string|Buffer"
+          },
+          {
+            "textRaw": "`options` {Object|string}",
+            "name": "options",
+            "type": "Object|string",
+            "options": [
+              {
+                "textRaw": "`encoding` {string|null} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string|null",
+                "default": "`'utf8'`"
+              },
+              {
+                "textRaw": "`mode` {integer} **Default:** `0o666`",
+                "name": "mode",
+                "type": "integer",
+                "default": "`0o666`"
+              },
+              {
+                "textRaw": "`flag` {string} See [support of file system `flags`][]. **Default:** `'a'`.",
+                "name": "flag",
+                "type": "string",
+                "default": "`'a'`",
+                "desc": "See [support of file system `flags`][]."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL|number} filename or file descriptor",
+            "name": "path",
+            "type": "string|Buffer|URL|number",
+            "desc": "filename or file descriptor"
+          },
+          {
+            "textRaw": "`data` {string|Buffer}",
+            "name": "data",
+            "type": "string|Buffer"
+          },
+          {
+            "textRaw": "`options` {Object|string}",
+            "name": "options",
+            "type": "Object|string",
+            "options": [
+              {
+                "textRaw": "`encoding` {string|null} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string|null",
+                "default": "`'utf8'`"
+              },
+              {
+                "textRaw": "`mode` {integer} **Default:** `0o666`",
+                "name": "mode",
+                "type": "integer",
+                "default": "`0o666`"
+              },
+              {
+                "textRaw": "`flag` {string} See [support of file system `flags`][]. **Default:** `'a'`.",
+                "name": "flag",
+                "type": "string",
+                "default": "`'a'`",
+                "desc": "See [support of file system `flags`][]."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "chmodSync": {
+    "module": "fs",
+    "asyncName": "chmod",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`mode` {integer}",
+            "name": "mode",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`mode` {integer}",
+            "name": "mode",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "chownSync": {
+    "module": "fs",
+    "asyncName": "chown",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`uid` {integer}",
+            "name": "uid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`gid` {integer}",
+            "name": "gid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`uid` {integer}",
+            "name": "uid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`gid` {integer}",
+            "name": "gid",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "closeSync": {
+    "module": "fs",
+    "asyncName": "close",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "copyFileSync": {
+    "module": "fs",
+    "asyncName": "copyFile",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`src` {string|Buffer|URL} source filename to copy",
+            "name": "src",
+            "type": "string|Buffer|URL",
+            "desc": "source filename to copy"
+          },
+          {
+            "textRaw": "`dest` {string|Buffer|URL} destination filename of the copy operation",
+            "name": "dest",
+            "type": "string|Buffer|URL",
+            "desc": "destination filename of the copy operation"
+          },
+          {
+            "textRaw": "`flags` {number} modifiers for copy operation. **Default:** `0`.",
+            "name": "flags",
+            "type": "number",
+            "default": "`0`",
+            "desc": "modifiers for copy operation.",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`src` {string|Buffer|URL} source filename to copy",
+            "name": "src",
+            "type": "string|Buffer|URL",
+            "desc": "source filename to copy"
+          },
+          {
+            "textRaw": "`dest` {string|Buffer|URL} destination filename of the copy operation",
+            "name": "dest",
+            "type": "string|Buffer|URL",
+            "desc": "destination filename of the copy operation"
+          },
+          {
+            "textRaw": "`flags` {number} modifiers for copy operation. **Default:** `0`.",
+            "name": "flags",
+            "type": "number",
+            "default": "`0`",
+            "desc": "modifiers for copy operation.",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "existsSync": {
+    "module": "fs",
+    "asyncName": "exists",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`exists` {boolean}",
+                "name": "exists",
+                "type": "boolean"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {boolean}",
+          "name": "return",
+          "type": "boolean"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          }
+        ]
+      }
+    ]
+  },
+  "fchmodSync": {
+    "module": "fs",
+    "asyncName": "fchmod",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`mode` {integer}",
+            "name": "mode",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`mode` {integer}",
+            "name": "mode",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "fchownSync": {
+    "module": "fs",
+    "asyncName": "fchown",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`uid` {integer}",
+            "name": "uid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`gid` {integer}",
+            "name": "gid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`uid` {integer}",
+            "name": "uid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`gid` {integer}",
+            "name": "gid",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "fdatasyncSync": {
+    "module": "fs",
+    "asyncName": "fdatasync",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "fstatSync": {
+    "module": "fs",
+    "asyncName": "fstat",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`options` {Object}",
+            "name": "options",
+            "type": "Object",
+            "options": [
+              {
+                "textRaw": "`bigint` {boolean} Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`. **Default:** `false`.",
+                "name": "bigint",
+                "type": "boolean",
+                "default": "`false`",
+                "desc": "Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`stats` {fs.Stats}",
+                "name": "stats",
+                "type": "fs.Stats"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {fs.Stats}",
+          "name": "return",
+          "type": "fs.Stats"
+        },
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`options` {Object}",
+            "name": "options",
+            "type": "Object",
+            "options": [
+              {
+                "textRaw": "`bigint` {boolean} Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`. **Default:** `false`.",
+                "name": "bigint",
+                "type": "boolean",
+                "default": "`false`",
+                "desc": "Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "fsyncSync": {
+    "module": "fs",
+    "asyncName": "fsync",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "ftruncateSync": {
+    "module": "fs",
+    "asyncName": "ftruncate",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`len` {integer} **Default:** `0`",
+            "name": "len",
+            "type": "integer",
+            "default": "`0`",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`len` {integer} **Default:** `0`",
+            "name": "len",
+            "type": "integer",
+            "default": "`0`",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "futimesSync": {
+    "module": "fs",
+    "asyncName": "futimes",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`atime` {number|string|Date}",
+            "name": "atime",
+            "type": "number|string|Date"
+          },
+          {
+            "textRaw": "`mtime` {number|string|Date}",
+            "name": "mtime",
+            "type": "number|string|Date"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`atime` {integer}",
+            "name": "atime",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`mtime` {integer}",
+            "name": "mtime",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "lchmodSync": {
+    "module": "fs",
+    "asyncName": "lchmod",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`mode` {integer}",
+            "name": "mode",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`mode` {integer}",
+            "name": "mode",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "lchownSync": {
+    "module": "fs",
+    "asyncName": "lchown",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`uid` {integer}",
+            "name": "uid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`gid` {integer}",
+            "name": "gid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`uid` {integer}",
+            "name": "uid",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`gid` {integer}",
+            "name": "gid",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "linkSync": {
+    "module": "fs",
+    "asyncName": "link",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`existingPath` {string|Buffer|URL}",
+            "name": "existingPath",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`newPath` {string|Buffer|URL}",
+            "name": "newPath",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`existingPath` {string|Buffer|URL}",
+            "name": "existingPath",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`newPath` {string|Buffer|URL}",
+            "name": "newPath",
+            "type": "string|Buffer|URL"
+          }
+        ]
+      }
+    ]
+  },
+  "lstatSync": {
+    "module": "fs",
+    "asyncName": "lstat",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {Object}",
+            "name": "options",
+            "type": "Object",
+            "options": [
+              {
+                "textRaw": "`bigint` {boolean} Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`. **Default:** `false`.",
+                "name": "bigint",
+                "type": "boolean",
+                "default": "`false`",
+                "desc": "Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`stats` {fs.Stats}",
+                "name": "stats",
+                "type": "fs.Stats"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {fs.Stats}",
+          "name": "return",
+          "type": "fs.Stats"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {Object}",
+            "name": "options",
+            "type": "Object",
+            "options": [
+              {
+                "textRaw": "`bigint` {boolean} Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`. **Default:** `false`.",
+                "name": "bigint",
+                "type": "boolean",
+                "default": "`false`",
+                "desc": "Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "mkdirSync": {
+    "module": "fs",
+    "asyncName": "mkdir",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {Object|integer}",
+            "name": "options",
+            "type": "Object|integer",
+            "options": [
+              {
+                "textRaw": "`recursive` {boolean} **Default:** `false`",
+                "name": "recursive",
+                "type": "boolean",
+                "default": "`false`"
+              },
+              {
+                "textRaw": "`mode` {integer} Not supported on Windows. **Default:** `0o777`.",
+                "name": "mode",
+                "type": "integer",
+                "default": "`0o777`",
+                "desc": "Not supported on Windows."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {Object|integer}",
+            "name": "options",
+            "type": "Object|integer",
+            "options": [
+              {
+                "textRaw": "`recursive` {boolean} **Default:** `false`",
+                "name": "recursive",
+                "type": "boolean",
+                "default": "`false`"
+              },
+              {
+                "textRaw": "`mode` {integer} Not supported on Windows. **Default:** `0o777`.",
+                "name": "mode",
+                "type": "integer",
+                "default": "`0o777`",
+                "desc": "Not supported on Windows."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "mkdtempSync": {
+    "module": "fs",
+    "asyncName": "mkdtemp",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`prefix` {string}",
+            "name": "prefix",
+            "type": "string"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`folder` {string}",
+                "name": "folder",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {string}",
+          "name": "return",
+          "type": "string"
+        },
+        "params": [
+          {
+            "textRaw": "`prefix` {string}",
+            "name": "prefix",
+            "type": "string"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "openSync": {
+    "module": "fs",
+    "asyncName": "open",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`flags` {string|number} See [support of file system `flags`][]. **Default:** `'r'`.",
+            "name": "flags",
+            "type": "string|number",
+            "default": "`'r'`",
+            "desc": "See [support of file system `flags`][].",
+            "optional": true
+          },
+          {
+            "textRaw": "`mode` {integer} **Default:** `0o666` (readable and writable)",
+            "name": "mode",
+            "type": "integer",
+            "default": "`0o666` (readable and writable)",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`fd` {integer}",
+                "name": "fd",
+                "type": "integer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {number}",
+          "name": "return",
+          "type": "number"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`flags` {string|number} **Default:** `'r'`. See [support of file system `flags`][].",
+            "name": "flags",
+            "type": "string|number",
+            "default": "`'r'`. See [support of file system `flags`][]",
+            "optional": true
+          },
+          {
+            "textRaw": "`mode` {integer} **Default:** `0o666`",
+            "name": "mode",
+            "type": "integer",
+            "default": "`0o666`",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "readdirSync": {
+    "module": "fs",
+    "asyncName": "readdir",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              },
+              {
+                "textRaw": "`withFileTypes` {boolean} **Default:** `false`",
+                "name": "withFileTypes",
+                "type": "boolean",
+                "default": "`false`"
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`files` {string[]|Buffer[]|fs.Dirent[]}",
+                "name": "files",
+                "type": "string[]|Buffer[]|fs.Dirent[]"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {string[]|Buffer[]|fs.Dirent[]}",
+          "name": "return",
+          "type": "string[]|Buffer[]|fs.Dirent[]"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              },
+              {
+                "textRaw": "`withFileTypes` {boolean} **Default:** `false`",
+                "name": "withFileTypes",
+                "type": "boolean",
+                "default": "`false`"
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "readFileSync": {
+    "module": "fs",
+    "asyncName": "readFile",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL|integer} filename or file descriptor",
+            "name": "path",
+            "type": "string|Buffer|URL|integer",
+            "desc": "filename or file descriptor"
+          },
+          {
+            "textRaw": "`options` {Object|string}",
+            "name": "options",
+            "type": "Object|string",
+            "options": [
+              {
+                "textRaw": "`encoding` {string|null} **Default:** `null`",
+                "name": "encoding",
+                "type": "string|null",
+                "default": "`null`"
+              },
+              {
+                "textRaw": "`flag` {string} See [support of file system `flags`][]. **Default:** `'r'`.",
+                "name": "flag",
+                "type": "string",
+                "default": "`'r'`",
+                "desc": "See [support of file system `flags`][]."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`data` {string|Buffer}",
+                "name": "data",
+                "type": "string|Buffer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {string|Buffer}",
+          "name": "return",
+          "type": "string|Buffer"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL|integer} filename or file descriptor",
+            "name": "path",
+            "type": "string|Buffer|URL|integer",
+            "desc": "filename or file descriptor"
+          },
+          {
+            "textRaw": "`options` {Object|string}",
+            "name": "options",
+            "type": "Object|string",
+            "options": [
+              {
+                "textRaw": "`encoding` {string|null} **Default:** `null`",
+                "name": "encoding",
+                "type": "string|null",
+                "default": "`null`"
+              },
+              {
+                "textRaw": "`flag` {string} See [support of file system `flags`][]. **Default:** `'r'`.",
+                "name": "flag",
+                "type": "string",
+                "default": "`'r'`",
+                "desc": "See [support of file system `flags`][]."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "readlinkSync": {
+    "module": "fs",
+    "asyncName": "readlink",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`linkString` {string|Buffer}",
+                "name": "linkString",
+                "type": "string|Buffer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {string|Buffer}",
+          "name": "return",
+          "type": "string|Buffer"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "readSync": {
+    "module": "fs",
+    "asyncName": "read",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView"
+          },
+          {
+            "textRaw": "`offset` {integer}",
+            "name": "offset",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`length` {integer}",
+            "name": "length",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`position` {integer}",
+            "name": "position",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`bytesRead` {integer}",
+                "name": "bytesRead",
+                "type": "integer"
+              },
+              {
+                "textRaw": "`buffer` {Buffer}",
+                "name": "buffer",
+                "type": "Buffer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {number}",
+          "name": "return",
+          "type": "number"
+        },
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView"
+          },
+          {
+            "textRaw": "`offset` {integer}",
+            "name": "offset",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`length` {integer}",
+            "name": "length",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`position` {integer}",
+            "name": "position",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "realpathSync": {
+    "module": "fs",
+    "asyncName": "realpath",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`resolvedPath` {string|Buffer}",
+                "name": "resolvedPath",
+                "type": "string|Buffer"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {string|Buffer}",
+          "name": "return",
+          "type": "string|Buffer"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {string|Object}",
+            "name": "options",
+            "type": "string|Object",
+            "options": [
+              {
+                "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string",
+                "default": "`'utf8'`"
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "renameSync": {
+    "module": "fs",
+    "asyncName": "rename",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`oldPath` {string|Buffer|URL}",
+            "name": "oldPath",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`newPath` {string|Buffer|URL}",
+            "name": "newPath",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`oldPath` {string|Buffer|URL}",
+            "name": "oldPath",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`newPath` {string|Buffer|URL}",
+            "name": "newPath",
+            "type": "string|Buffer|URL"
+          }
+        ]
+      }
+    ]
+  },
+  "rmdirSync": {
+    "module": "fs",
+    "asyncName": "rmdir",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          }
+        ]
+      }
+    ]
+  },
+  "statSync": {
+    "module": "fs",
+    "asyncName": "stat",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {Object}",
+            "name": "options",
+            "type": "Object",
+            "options": [
+              {
+                "textRaw": "`bigint` {boolean} Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`. **Default:** `false`.",
+                "name": "bigint",
+                "type": "boolean",
+                "default": "`false`",
+                "desc": "Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`stats` {fs.Stats}",
+                "name": "stats",
+                "type": "fs.Stats"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {fs.Stats}",
+          "name": "return",
+          "type": "fs.Stats"
+        },
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`options` {Object}",
+            "name": "options",
+            "type": "Object",
+            "options": [
+              {
+                "textRaw": "`bigint` {boolean} Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`. **Default:** `false`.",
+                "name": "bigint",
+                "type": "boolean",
+                "default": "`false`",
+                "desc": "Whether the numeric values in the returned [`fs.Stats`][] object should be `bigint`."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "symlinkSync": {
+    "module": "fs",
+    "asyncName": "symlink",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`target` {string|Buffer|URL}",
+            "name": "target",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`type` {string} **Default:** `'file'`",
+            "name": "type",
+            "type": "string",
+            "default": "`'file'`",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`target` {string|Buffer|URL}",
+            "name": "target",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`type` {string} **Default:** `'file'`",
+            "name": "type",
+            "type": "string",
+            "default": "`'file'`",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "truncateSync": {
+    "module": "fs",
+    "asyncName": "truncate",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`len` {integer} **Default:** `0`",
+            "name": "len",
+            "type": "integer",
+            "default": "`0`",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`len` {integer} **Default:** `0`",
+            "name": "len",
+            "type": "integer",
+            "default": "`0`",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "unlinkSync": {
+    "module": "fs",
+    "asyncName": "unlink",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          }
+        ]
+      }
+    ]
+  },
+  "utimesSync": {
+    "module": "fs",
+    "asyncName": "utimes",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`atime` {number|string|Date}",
+            "name": "atime",
+            "type": "number|string|Date"
+          },
+          {
+            "textRaw": "`mtime` {number|string|Date}",
+            "name": "mtime",
+            "type": "number|string|Date"
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`path` {string|Buffer|URL}",
+            "name": "path",
+            "type": "string|Buffer|URL"
+          },
+          {
+            "textRaw": "`atime` {integer}",
+            "name": "atime",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`mtime` {integer}",
+            "name": "mtime",
+            "type": "integer"
+          }
+        ]
+      }
+    ]
+  },
+  "writeFileSync": {
+    "module": "fs",
+    "asyncName": "writeFile",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`file` {string|Buffer|URL|integer} filename or file descriptor",
+            "name": "file",
+            "type": "string|Buffer|URL|integer",
+            "desc": "filename or file descriptor"
+          },
+          {
+            "textRaw": "`data` {string|Buffer|TypedArray|DataView}",
+            "name": "data",
+            "type": "string|Buffer|TypedArray|DataView"
+          },
+          {
+            "textRaw": "`options` {Object|string}",
+            "name": "options",
+            "type": "Object|string",
+            "options": [
+              {
+                "textRaw": "`encoding` {string|null} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string|null",
+                "default": "`'utf8'`"
+              },
+              {
+                "textRaw": "`mode` {integer} **Default:** `0o666`",
+                "name": "mode",
+                "type": "integer",
+                "default": "`0o666`"
+              },
+              {
+                "textRaw": "`flag` {string} See [support of file system `flags`][]. **Default:** `'w'`.",
+                "name": "flag",
+                "type": "string",
+                "default": "`'w'`",
+                "desc": "See [support of file system `flags`][]."
+              }
+            ],
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`file` {string|Buffer|URL|integer} filename or file descriptor",
+            "name": "file",
+            "type": "string|Buffer|URL|integer",
+            "desc": "filename or file descriptor"
+          },
+          {
+            "textRaw": "`data` {string|Buffer|TypedArray|DataView}",
+            "name": "data",
+            "type": "string|Buffer|TypedArray|DataView"
+          },
+          {
+            "textRaw": "`options` {Object|string}",
+            "name": "options",
+            "type": "Object|string",
+            "options": [
+              {
+                "textRaw": "`encoding` {string|null} **Default:** `'utf8'`",
+                "name": "encoding",
+                "type": "string|null",
+                "default": "`'utf8'`"
+              },
+              {
+                "textRaw": "`mode` {integer} **Default:** `0o666`",
+                "name": "mode",
+                "type": "integer",
+                "default": "`0o666`"
+              },
+              {
+                "textRaw": "`flag` {string} See [support of file system `flags`][]. **Default:** `'w'`.",
+                "name": "flag",
+                "type": "string",
+                "default": "`'w'`",
+                "desc": "See [support of file system `flags`][]."
+              }
+            ],
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "writeSync": {
+    "module": "fs",
+    "asyncName": "write",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`string` {string}",
+            "name": "string",
+            "type": "string"
+          },
+          {
+            "textRaw": "`position` {integer}",
+            "name": "position",
+            "type": "integer",
+            "optional": true
+          },
+          {
+            "textRaw": "`encoding` {string} **Default:** `'utf8'`",
+            "name": "encoding",
+            "type": "string",
+            "default": "`'utf8'`",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function",
+            "options": [
+              {
+                "textRaw": "`err` {Error}",
+                "name": "err",
+                "type": "Error"
+              },
+              {
+                "textRaw": "`written` {integer}",
+                "name": "written",
+                "type": "integer"
+              },
+              {
+                "textRaw": "`string` {string}",
+                "name": "string",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "return": {
+          "textRaw": "Returns: {number} The number of bytes written.",
+          "name": "return",
+          "type": "number",
+          "desc": "The number of bytes written."
+        },
+        "params": [
+          {
+            "textRaw": "`fd` {integer}",
+            "name": "fd",
+            "type": "integer"
+          },
+          {
+            "textRaw": "`string` {string}",
+            "name": "string",
+            "type": "string"
+          },
+          {
+            "textRaw": "`position` {integer}",
+            "name": "position",
+            "type": "integer",
+            "optional": true
+          },
+          {
+            "textRaw": "`encoding` {string}",
+            "name": "encoding",
+            "type": "string",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "brotliCompressSync": {
+    "module": "zlib",
+    "asyncName": "brotliCompress",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {brotli options}",
+            "name": "options",
+            "type": "brotli options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {brotli options}",
+            "name": "options",
+            "type": "brotli options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "brotliDecompressSync": {
+    "module": "zlib",
+    "asyncName": "brotliDecompress",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {brotli options}",
+            "name": "options",
+            "type": "brotli options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {brotli options}",
+            "name": "options",
+            "type": "brotli options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "deflateSync": {
+    "module": "zlib",
+    "asyncName": "deflate",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "deflateRawSync": {
+    "module": "zlib",
+    "asyncName": "deflateRaw",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "gunzipSync": {
+    "module": "zlib",
+    "asyncName": "gunzip",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "gzipSync": {
+    "module": "zlib",
+    "asyncName": "gzip",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "inflateSync": {
+    "module": "zlib",
+    "asyncName": "inflate",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "inflateRawSync": {
+    "module": "zlib",
+    "asyncName": "inflateRaw",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  },
+  "unzipSync": {
+    "module": "zlib",
+    "asyncName": "unzip",
+    "asyncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          },
+          {
+            "textRaw": "`callback` {Function}",
+            "name": "callback",
+            "type": "Function"
+          }
+        ]
+      }
+    ],
+    "syncSignature": [
+      {
+        "params": [
+          {
+            "textRaw": "`buffer` {Buffer|TypedArray|DataView|ArrayBuffer|string}",
+            "name": "buffer",
+            "type": "Buffer|TypedArray|DataView|ArrayBuffer|string"
+          },
+          {
+            "textRaw": "`options` {zlib options}",
+            "name": "options",
+            "type": "zlib options",
+            "optional": true
+          }
+        ]
+      }
+    ]
+  }
+}
