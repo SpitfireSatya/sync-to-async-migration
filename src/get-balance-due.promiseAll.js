@@ -33,11 +33,13 @@
     const file1Path = path.join(__dirname, "data", "file1.json");
     const file2Path = path.join(__dirname, "data", "file2.json");
 
+    const promise = performAsyncTasks(file1Path, file2Path);
+
     console.log("I am blocked until file 1 is read. Unblock me");
 
     console.log("I am blocked until file 1 & 2 are read. Unblock me");
     
-    return performAsyncTasks(file1Path, file2Path);
+    return promise;
 
   }
 
